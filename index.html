@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kensultagribase | Sustainable Agribusiness & Farm Management</title>
+  <meta name="description" content="Kensultagribase provides complete farm management, modern irrigation farming, fresh vegetable production, agricultural commodities supply, mango & cashew production, and contract farming.">
+  <meta name="keywords" content="Kensultagribase, Farm Management, Irrigation Farming, Vegetable Production, Commodities Supply, Mango, Cashew, Contract Farming, Agriculture Ghana, Agribusiness">
+  <meta property="og:title" content="Kensultagribase - Sustainable Agribusiness Solutions">
+  <meta property="og:description" content="From Soil to Market: Professional Farm Management, Modern Irrigation, Vegetable Production & Reliable Commodity Supply.">
+  <meta property="og:image" content="./logo.jpeg">
+  <link rel="icon" type="image/jpeg" href="./logo.jpeg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              50: '#f2f8f4',
+              100: '#e1f0e6',
+              500: '#2d7a46',
+              600: '#246338',
+              700: '#1e5631',
+              800: '#184427',
+              900: '#143621',
+            },
+            harvest: {
+              400: '#e6b15c',
+              500: '#c98a2c',
+              600: '#b07722',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="bg-[#faf9f5] text-slate-800 antialiased selection:bg-forest-500 selection:text-white">
+
+  <!-- Navigation Bar -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo & Brand Name -->
+        <a href="#home" class="flex items-center space-x-3 group">
+          <div class="w-12 h-12 rounded-xl overflow-hidden shadow-sm border border-forest-100 bg-white p-1 flex items-center justify-center transition-transform group-hover:scale-105">
+            <img src="./logo.jpeg" alt="Kensultagribase Logo" class="w-full h-full object-contain">
+          </div>
+          <div>
+            <span class="text-2xl font-bold tracking-tight text-forest-900 block leading-tight font-['Outfit']">Kensultagribase</span>
+            <span class="text-xs uppercase tracking-widest text-forest-600 font-semibold">Agribusiness & Consulting</span>
+          </div>
+        </a>
+
+        <!-- Desktop Menu Links -->
+        <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-700 text-sm">
+          <a href="#home" class="hover:text-forest-600 transition-colors py-1">Home</a>
+          <a href="#about" class="hover:text-forest-600 transition-colors py-1">About Us</a>
+          <a href="#services" class="hover:text-forest-600 transition-colors py-1">Services</a>
+          <a href="#why-us" class="hover:text-forest-600 transition-colors py-1">Why Choose Us</a>
+          <a href="#contact" class="hover:text-forest-600 transition-colors py-1">Contact</a>
+        </nav>
+
+        <!-- CTA Action -->
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="#contact" class="px-5 py-2.5 rounded-full bg-forest-700 hover:bg-forest-800 text-white font-semibold text-sm shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+            <span>Request Quote</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex md:hidden">
+          <button id="mobile-menu-btn" type="button" aria-label="Toggle menu" class="p-2 rounded-lg text-slate-700 hover:bg-forest-50 focus:outline-none focus:ring-2 focus:ring-forest-500">
+            <i id="menu-icon-open" data-lucide="menu" class="w-6 h-6"></i>
+            <i id="menu-icon-close" data-lucide="x" class="w-6 h-6 hidden"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 border-b border-forest-100 px-6 pt-4 pb-6 space-y-4 shadow-xl">
+      <a href="#home" class="block font-medium text-slate-800 hover:text-forest-600 mobile-nav-link text-base">Home</a>
+      <a href="#about" class="block font-medium text-slate-800 hover:text-forest-600 mobile-nav-link text-base">About Us</a>
+      <a href="#services" class="block font-medium text-slate-800 hover:text-forest-600 mobile-nav-link text-base">Services</a>
+      <a href="#why-us" class="block font-medium text-slate-800 hover:text-forest-600 mobile-nav-link text-base">Why Choose Us</a>
+      <a href="#contact" class="block font-medium text-slate-800 hover:text-forest-600 mobile-nav-link text-base">Contact</a>
+      <div class="pt-3 border-t border-slate-100 flex flex-col gap-3">
+        <a href="#contact" class="w-full text-center px-5 py-3 rounded-full bg-forest-700 text-white font-semibold text-sm shadow mobile-nav-link">
+          Request Quote
+        </a>
+        <a href="https://wa.me/?text=Hello%20Kensultagribase%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="w-full text-center px-5 py-3 rounded-full bg-[#25d366] text-white font-semibold text-sm flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Chat on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden hero-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full badge-eco text-xs sm:text-sm font-semibold tracking-wide">
+            <i data-lucide="sprout" class="w-4 h-4 text-forest-600"></i>
+            <span>Sustainable Agribusiness & Modern Farming Solutions</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-forest-900 tracking-tight leading-[1.15]">
+            Cultivating Excellence, <br class="hidden sm:inline">
+            <span class="text-forest-600">From Soil to Global Markets</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl">
+            At <strong>Kensultagribase</strong>, we empower farms, investors, and agricultural partners with modern farm management, high-efficiency irrigation, fresh vegetable farming, and reliable commodity supply chains.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <a href="#services" class="px-8 py-4 rounded-full bg-forest-700 hover:bg-forest-800 text-white font-semibold text-base shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group">
+              <span>Explore Our Services</span>
+              <i data-lucide="chevron-right" class="w-5 h-5 transition-transform group-hover:translate-x-1"></i>
+            </a>
+            <a href="#contact" class="px-8 py-4 rounded-full bg-white hover:bg-forest-50 text-forest-800 font-semibold text-base border border-forest-200 shadow-sm hover:shadow transition-all flex items-center justify-center gap-2">
+              <i data-lucide="phone-call" class="w-5 h-5 text-forest-600"></i>
+              <span>Schedule Consultation</span>
+            </a>
+          </div>
+
+          <!-- Feature Highlights Grid -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-forest-200/60 max-w-lg">
+            <div>
+              <p class="text-2xl sm:text-3xl font-bold text-forest-900 font-['Outfit']">100%</p>
+              <p class="text-xs sm:text-sm text-slate-500 font-medium">Sustainable & Organic</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-bold text-forest-900 font-['Outfit']">Year-Round</p>
+              <p class="text-xs sm:text-sm text-slate-500 font-medium">Reliable Production</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-bold text-forest-900 font-['Outfit']">End-to-End</p>
+              <p class="text-xs sm:text-sm text-slate-500 font-medium">Supply Chain</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Primary Image -->
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+              <img src="./farmer-joe.jpeg" alt="Kensultagribase Farmer in Harvest Corn Field" class="w-full h-[420px] object-cover object-top hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-forest-950/70 via-transparent to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <span class="px-3 py-1 bg-harvest-500/90 backdrop-blur-sm rounded-full text-xs font-bold uppercase tracking-wider">Premium Field Harvest</span>
+                <p class="text-sm font-medium mt-1 text-slate-100">Corn, Cashew, Mango & High-Value Cash Crops</p>
+              </div>
+            </div>
+
+            <!-- Overlapping Floating Card with Manager Image -->
+            <div class="absolute -bottom-8 -left-6 sm:-left-10 bg-white p-3 rounded-2xl shadow-xl border border-forest-100 max-w-[240px] hidden sm:flex items-center gap-3">
+              <div class="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-forest-200">
+                <img src="./manager.jpeg" alt="Kensultagribase Greenhouse Manager" class="w-full h-full object-cover">
+              </div>
+              <div>
+                <p class="text-xs font-bold text-forest-900 leading-snug">Precision Farming</p>
+                <p class="text-[11px] text-slate-500 leading-tight">Greenhouse & Irrigation Systems</p>
+                <div class="flex items-center gap-1 mt-1 text-emerald-600 text-[11px] font-semibold">
+                  <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i>
+                  <span>Quality Assured</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Organic Badge Floating -->
+            <div class="absolute -top-4 -right-4 bg-forest-800 text-white px-4 py-2 rounded-2xl shadow-lg flex items-center gap-2 text-xs font-semibold">
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+              <span>Verified Agritech</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-20 bg-white border-y border-forest-100/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Media Gallery -->
+        <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <div class="rounded-2xl overflow-hidden shadow-md border border-slate-100 h-56">
+              <img src="./manager.jpeg" alt="Greenhouse vegetable production" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-4 bg-forest-50 rounded-2xl border border-forest-100">
+              <i data-lucide="award" class="w-7 h-7 text-forest-700 mb-2"></i>
+              <h4 class="font-bold text-forest-900 text-sm">Strict Quality Standards</h4>
+              <p class="text-xs text-slate-600 mt-1">Carefully monitored from seed planting to doorstep market delivery.</p>
+            </div>
+          </div>
+
+          <div class="space-y-4 pt-6">
+            <div class="p-4 bg-harvest-500/10 rounded-2xl border border-harvest-500/20">
+              <i data-lucide="droplet" class="w-7 h-7 text-harvest-600 mb-2"></i>
+              <h4 class="font-bold text-forest-900 text-sm">Smart Irrigation</h4>
+              <p class="text-xs text-slate-600 mt-1">Water-efficient systems engineered for consistent yield year-round.</p>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-md border border-slate-100 h-56">
+              <img src="./farmer-joe.jpeg" alt="Farmer in corn field" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-eco text-xs font-semibold uppercase tracking-wider">
+            <i data-lucide="leaf" class="w-3.5 h-3.5 text-forest-600"></i>
+            <span>About Kensultagribase</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-bold text-forest-900 tracking-tight leading-snug">
+            Empowering Modern Agriculture with Knowledge, Technology & Trust
+          </h2>
+
+          <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+            <strong>Kensultagribase</strong> is a forward-thinking agricultural consulting and management enterprise committed to transforming farming into a profitable, sustainable, and reliable industry.
+          </p>
+
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Whether you are an absentee farm owner needing trusted hands-on farm management, a commercial enterprise seeking steady commodity supply, or a smallholder looking for modern irrigation technology, we bridge the gap between scientific agriculture and market success.
+          </p>
+
+          <!-- Core Values List -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="flex items-start gap-3">
+              <div class="p-2 rounded-xl bg-forest-100 text-forest-700 shrink-0">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Integrity & Accountability</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Transparent reporting and diligent resource supervision for every farm project.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="p-2 rounded-xl bg-forest-100 text-forest-700 shrink-0">
+                <i data-lucide="sun" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Climate-Smart Systems</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Irrigation and pest resilience strategies tailored for tropical and dry periods.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="p-2 rounded-xl bg-forest-100 text-forest-700 shrink-0">
+                <i data-lucide="handshake" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Fair Contract Farming</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Securing fair guaranteed pricing for producers and steady supply for off-takers.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="p-2 rounded-xl bg-forest-100 text-forest-700 shrink-0">
+                <i data-lucide="truck" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Guaranteed Supply Chains</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Direct farm-to-door distribution with post-harvest cold chain preservation.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <a href="#contact" class="inline-flex items-center gap-2 font-semibold text-forest-700 hover:text-forest-900 transition-colors">
+              <span>Learn more about partnering with our agronomy team</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services Section -->
+  <section id="services" class="py-20 bg-[#faf9f5]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full badge-eco text-xs font-semibold uppercase tracking-wider">
+          <i data-lucide="layers" class="w-3.5 h-3.5 text-forest-600"></i>
+          <span>What We Do</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-forest-900 tracking-tight">
+          Comprehensive Agribusiness Services
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          Specialized end-to-end agricultural solutions designed to maximize farm yield, protect capital, and connect produce directly to reliable markets.
+        </p>
+      </div>
+
+      <!-- 6 Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service 1: Farm Management -->
+        <div class="bg-white rounded-3xl p-8 service-card flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-forest-100 text-forest-700 flex items-center justify-center">
+              <i data-lucide="layout-grid" class="w-7 h-7"></i>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-forest-600 uppercase tracking-wider">Service 01</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-100 text-emerald-800">Turnkey</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 font-['Outfit']">Farm Management</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              We provide complete farm management solutions to help farmers improve productivity and efficiency. Our services include strategic planning, real-time monitoring, field supervision, and resource management to ensure successful farming operations.
+            </p>
+            <ul class="space-y-2 pt-2 text-xs font-medium text-slate-600 border-t border-slate-100">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-forest-600"></i> Comprehensive agronomy supervision</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-forest-600"></i> Resource allocation & budget tracking</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-forest-600"></i> Detailed investor & farm owner reporting</li>
+            </ul>
+          </div>
+          <div class="pt-6">
+            <button onclick="openInquiryModal('Farm Management')" class="w-full py-2.5 px-4 rounded-xl bg-forest-50 hover:bg-forest-700 text-forest-800 hover:text-white font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 group">
+              <span>Inquire About Farm Management</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 2: Irrigation Farming -->
+        <div class="bg-white rounded-3xl p-8 service-card flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-cyan-100 text-cyan-700 flex items-center justify-center">
+              <i data-lucide="droplets" class="w-7 h-7"></i>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-cyan-600 uppercase tracking-wider">Service 02</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-cyan-100 text-cyan-800">All-Season</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 font-['Outfit']">Irrigation Farming</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              We offer modern irrigation solutions to ensure crops receive adequate water throughout the growing season. This mitigates drought risk and dramatically improves crop yield, especially during critical dry periods.
+            </p>
+            <ul class="space-y-2 pt-2 text-xs font-medium text-slate-600 border-t border-slate-100">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-600"></i> Drip & sprinkler irrigation design</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-600"></i> Water conservation & storage systems</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-600"></i> Off-season high-yield harvesting</li>
+            </ul>
+          </div>
+          <div class="pt-6">
+            <button onclick="openInquiryModal('Irrigation Farming')" class="w-full py-2.5 px-4 rounded-xl bg-forest-50 hover:bg-forest-700 text-forest-800 hover:text-white font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 group">
+              <span>Inquire About Irrigation</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 3: Vegetable Production -->
+        <div class="bg-white rounded-3xl p-8 service-card flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
+              <i data-lucide="apple" class="w-7 h-7"></i>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Service 03</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-100 text-emerald-800">Fresh & Healthy</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 font-['Outfit']">Vegetable Production</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              We specialize in the cultivation and commercial production of fresh, healthy vegetables using modern farming practices and greenhouse systems to meet urgent market demand and guarantee pesticide-conscious, grade-A produce.
+            </p>
+            <ul class="space-y-2 pt-2 text-xs font-medium text-slate-600 border-t border-slate-100">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Bell peppers, tomatoes, onions & greens</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Greenhouse & open-field agronomy</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Direct supply to supermarkets & hotels</li>
+            </ul>
+          </div>
+          <div class="pt-6">
+            <button onclick="openInquiryModal('Vegetable Production')" class="w-full py-2.5 px-4 rounded-xl bg-forest-50 hover:bg-forest-700 text-forest-800 hover:text-white font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 group">
+              <span>Order Fresh Vegetables</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 4: Commodities Supply -->
+        <div class="bg-white rounded-3xl p-8 service-card flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center">
+              <i data-lucide="truck" class="w-7 h-7"></i>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Service 04</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-amber-100 text-amber-800">Wholesale</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 font-['Outfit']">Commodities Supply</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              We supply high-quality agricultural commodities to businesses, processors, food retailers, and individuals. Our focus is centered on verified quality assurance, punctual bulk delivery, and sustainable supply contracts.
+            </p>
+            <ul class="space-y-2 pt-2 text-xs font-medium text-slate-600 border-t border-slate-100">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Grains, cereals, legumes & staples</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Rigorous post-harvest quality checks</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Bulk warehousing and logistics coordination</li>
+            </ul>
+          </div>
+          <div class="pt-6">
+            <button onclick="openInquiryModal('Commodities Supply')" class="w-full py-2.5 px-4 rounded-xl bg-forest-50 hover:bg-forest-700 text-forest-800 hover:text-white font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 group">
+              <span>Request Commodity Supply</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 5: Mango & Cashew -->
+        <div class="bg-white rounded-3xl p-8 service-card flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-orange-100 text-orange-700 flex items-center justify-center">
+              <i data-lucide="sun-medium" class="w-7 h-7"></i>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-orange-600 uppercase tracking-wider">Service 05</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-orange-100 text-orange-800">Export Grade</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 font-['Outfit']">Mango & Cashew</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              We produce and supply premium-grade mangoes and cashew nut products. Our streamlined horticultural processes ensure optimal sweetness, size, freshness, and high economic value from the orchard directly to destination markets.
+            </p>
+            <ul class="space-y-2 pt-2 text-xs font-medium text-slate-600 border-t border-slate-100">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-600"></i> Premium mango cultivars (Keitt, Kent)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-600"></i> Raw & processed high-yield cashew nuts</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-600"></i> Export packaging and quality certification</li>
+            </ul>
+          </div>
+          <div class="pt-6">
+            <button onclick="openInquiryModal('Mango & Cashew')" class="w-full py-2.5 px-4 rounded-xl bg-forest-50 hover:bg-forest-700 text-forest-800 hover:text-white font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 group">
+              <span>Source Mango & Cashew</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 6: Contract Farming -->
+        <div class="bg-white rounded-3xl p-8 service-card flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center">
+              <i data-lucide="file-check-2" class="w-7 h-7"></i>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Service 06</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-indigo-100 text-indigo-800">Partnership</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 font-['Outfit']">Contract Farming</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              We build formal, win-win partnerships between agricultural producers and institutional buyers. Our contract farming models guarantee stable off-taker markets, fair transparent pricing, and dependable volume fulfillment for both sides.
+            </p>
+            <ul class="space-y-2 pt-2 text-xs font-medium text-slate-600 border-t border-slate-100">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-600"></i> Guaranteed off-take price agreements</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-600"></i> Input financing and technical assistance</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-600"></i> Reduced price volatility & supply risk</li>
+            </ul>
+          </div>
+          <div class="pt-6">
+            <button onclick="openInquiryModal('Contract Farming')" class="w-full py-2.5 px-4 rounded-xl bg-forest-50 hover:bg-forest-700 text-forest-800 hover:text-white font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 group">
+              <span>Discuss Contract Farming</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-us" class="py-20 bg-forest-900 text-white relative overflow-hidden">
+    <!-- Background Decor -->
+    <div class="absolute -right-24 -bottom-24 w-96 h-96 rounded-full bg-forest-700/20 blur-3xl pointer-events-none"></div>
+    <div class="absolute -left-24 -top-24 w-96 h-96 rounded-full bg-harvest-500/10 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-forest-800 text-forest-200 text-xs font-semibold uppercase tracking-wider border border-forest-700">
+          <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span>Our Competitive Advantage</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Why Agri-Investors & Farmers Partner With Kensultagribase
+        </h2>
+        <p class="text-forest-100/80 text-base sm:text-lg">
+          We combine ground-level agronomy experience with rigorous business management to create measurable agricultural prosperity.
+        </p>
+      </div>
+
+      <!-- Feature Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-forest-800/60 p-6 rounded-2xl border border-forest-700/60 hover:bg-forest-800 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-forest-700/80 text-emerald-300 flex items-center justify-center mb-4">
+            <i data-lucide="trending-up" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2 font-['Outfit']">Data-Driven Yields</h3>
+          <p class="text-forest-100/70 text-sm leading-relaxed">
+            We employ modern soil testing, precision nutrient scheduling, and drip systems to maximize output per acre.
+          </p>
+        </div>
+
+        <div class="bg-forest-800/60 p-6 rounded-2xl border border-forest-700/60 hover:bg-forest-800 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-forest-700/80 text-emerald-300 flex items-center justify-center mb-4">
+            <i data-lucide="shield" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2 font-['Outfit']">Capital Security</h3>
+          <p class="text-forest-100/70 text-sm leading-relaxed">
+            Transparent farm accounting, active inventory controls, and verified weekly progress updates protect your investment.
+          </p>
+        </div>
+
+        <div class="bg-forest-800/60 p-6 rounded-2xl border border-forest-700/60 hover:bg-forest-800 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-forest-700/80 text-emerald-300 flex items-center justify-center mb-4">
+            <i data-lucide="clock" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2 font-['Outfit']">Consistent Supply</h3>
+          <p class="text-forest-100/70 text-sm leading-relaxed">
+            Irrigation and staggered greenhouse planting allow us to supply vegetables and commodities uninterrupted throughout the year.
+          </p>
+        </div>
+
+        <div class="bg-forest-800/60 p-6 rounded-2xl border border-forest-700/60 hover:bg-forest-800 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-forest-700/80 text-emerald-300 flex items-center justify-center mb-4">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2 font-['Outfit']">Dedicated Support</h3>
+          <p class="text-forest-100/70 text-sm leading-relaxed">
+            Experienced agronomists and farm managers who are on-site daily, treating your land and crops with professional diligence.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Callout Banner -->
+      <div class="mt-12 p-8 rounded-3xl bg-gradient-to-r from-forest-800 to-forest-700 border border-forest-600/50 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="text-2xl font-bold text-white font-['Outfit']">Have Farmland or Need Reliable Produce Supply?</h3>
+          <p class="text-forest-100/80 text-sm mt-1">Let us evaluate your farm setup or supply requirements today.</p>
+        </div>
+        <div class="shrink-0 flex items-center gap-3">
+          <a href="#contact" class="px-6 py-3 rounded-full bg-white text-forest-900 font-bold text-sm shadow hover:bg-forest-50 transition-all">
+            Get in Touch
+          </a>
+          <a href="https://wa.me/?text=Hello%20Kensultagribase%2C%20I%20would%20like%20to%20partner%20with%20you." target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-[#25d366] text-white font-bold text-sm shadow hover:bg-[#20bd5a] transition-all flex items-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>WhatsApp Us</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact & Consultation Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Info Column -->
+        <div class="lg:col-span-5 space-y-8">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-eco text-xs font-semibold uppercase tracking-wider mb-4">
+              <i data-lucide="mail" class="w-3.5 h-3.5 text-forest-600"></i>
+              <span>Connect With Us</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-forest-900 tracking-tight">
+              Let's Grow Your Agricultural Vision
+            </h2>
+            <p class="text-slate-600 text-base mt-3 leading-relaxed">
+              Reach out to discuss farm management contracts, bulk commodity orders, irrigation installations, or fresh vegetable supplies. Our team responds promptly.
+            </p>
+          </div>
+
+          <!-- Contact Cards -->
+          <div class="space-y-4">
+            
+            <div class="p-4 rounded-2xl bg-forest-50/70 border border-forest-100 flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-forest-700 text-white flex items-center justify-center shrink-0">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-forest-700 uppercase tracking-wider">Phone / WhatsApp</p>
+                <a href="tel:+233200000000" id="contact-phone-link" class="text-slate-900 font-semibold text-base hover:text-forest-600 transition-colors">
+                  +233 (0) 24 000 0000 / Direct Line
+                </a>
+                <p class="text-xs text-slate-500 mt-0.5">Monday - Saturday: 8:00 AM – 6:00 PM</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-forest-50/70 border border-forest-100 flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-forest-700 text-white flex items-center justify-center shrink-0">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-forest-700 uppercase tracking-wider">Email Inquiries</p>
+                <a href="mailto:info@kensultagribase.com" id="contact-email-link" class="text-slate-900 font-semibold text-base hover:text-forest-600 transition-colors">
+                  info@kensultagribase.com
+                </a>
+                <p class="text-xs text-slate-500 mt-0.5">Quick responses for quotes and supply contracts</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-forest-50/70 border border-forest-100 flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-forest-700 text-white flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-forest-700 uppercase tracking-wider">Operations & Farm Base</p>
+                <p class="text-slate-900 font-semibold text-base">
+                  Ghana, West Africa
+                </p>
+                <p class="text-xs text-slate-500 mt-0.5">Farm locations across strategic agricultural zones</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick WhatsApp Direct CTA -->
+          <div class="p-5 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-[#25d366] text-white flex items-center justify-center shrink-0">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900">Prefer Instant Chat?</h4>
+                <p class="text-xs text-slate-600">Start an instant WhatsApp chat with our farm desk.</p>
+              </div>
+            </div>
+            <a href="https://wa.me/?text=Hello%20Kensultagribase%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-[#25d366] hover:bg-[#20bd5a] text-white text-xs font-bold shadow transition-colors shrink-0">
+              Chat Now
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Contact Form Column -->
+        <div class="lg:col-span-7">
+          <div class="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xl shadow-forest-900/5">
+            <h3 class="text-2xl font-bold text-forest-900 mb-2 font-['Outfit']">Send Us an Inquiry</h3>
+            <p class="text-slate-600 text-sm mb-6">Fill out this quick form and our agricultural specialist will get back to you within 24 hours.</p>
+
+            <form id="inquiry-form" class="space-y-5">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="fullName" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Full Name *</label>
+                  <input type="text" id="fullName" name="fullName" required placeholder="e.g. Samuel Mensah" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent text-sm bg-slate-50/50">
+                </div>
+
+                <div>
+                  <label for="phone" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Phone / WhatsApp *</label>
+                  <input type="tel" id="phone" name="phone" required placeholder="e.g. +233 24 123 4567" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent text-sm bg-slate-50/50">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Email Address *</label>
+                  <input type="email" id="email" name="email" required placeholder="e.g. you@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent text-sm bg-slate-50/50">
+                </div>
+
+                <div>
+                  <label for="serviceInterest" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Service of Interest *</label>
+                  <select id="serviceInterest" name="serviceInterest" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent text-sm bg-slate-50/50">
+                    <option value="">Select a service</option>
+                    <option value="Farm Management">1. Farm Management</option>
+                    <option value="Irrigation Farming">2. Irrigation Farming</option>
+                    <option value="Vegetable Production">3. Vegetable Production</option>
+                    <option value="Commodities Supply">4. Commodities Supply</option>
+                    <option value="Mango & Cashew">5. Mango & Cashew</option>
+                    <option value="Contract Farming">6. Contract Farming</option>
+                    <option value="General Consultation">Other / General Consultation</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="message" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Project Details or Inquiry *</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Describe your farm size, crop type, location, or commodity requirements..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent text-sm bg-slate-50/50"></textarea>
+              </div>
+
+              <div>
+                <button type="submit" id="submit-btn" class="w-full py-4 px-6 rounded-xl bg-forest-700 hover:bg-forest-800 text-white font-bold text-base shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
+                  <span>Submit Inquiry</span>
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                </button>
+              </div>
+
+              <p class="text-[11px] text-center text-slate-400">
+                🔒 We respect your privacy. Your information will only be used to answer your agricultural inquiry.
+              </p>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Service Inquiry Modal -->
+  <div id="serviceModal" class="fixed inset-0 z-50 modal-overlay hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative animate-in fade-in zoom-in-95 duration-200">
+      <button onclick="closeInquiryModal()" class="absolute top-5 right-5 p-2 rounded-full text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors" aria-label="Close modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="space-y-4">
+        <div class="w-12 h-12 rounded-2xl bg-forest-100 text-forest-700 flex items-center justify-center">
+          <i data-lucide="sparkles" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-forest-900 font-['Outfit']">Service Inquiry</h3>
+          <p class="text-xs text-slate-500 mt-0.5">Quick consultation request for <span id="modalServiceName" class="font-bold text-forest-700"></span></p>
+        </div>
+
+        <form id="modal-form" class="space-y-4 pt-2">
+          <input type="hidden" id="modalServiceInput" name="service">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Name *</label>
+            <input type="text" id="modalName" required placeholder="e.g. John Doe" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-forest-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone or WhatsApp *</label>
+            <input type="tel" id="modalPhone" required placeholder="e.g. +233 24 000 0000" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-forest-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Brief Notes / Farm Location</label>
+            <textarea id="modalNotes" rows="3" placeholder="Tell us briefly about your needs or farm location..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-forest-500 focus:outline-none"></textarea>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-3 pt-2">
+            <button type="submit" class="flex-1 py-3 px-5 rounded-xl bg-forest-700 hover:bg-forest-800 text-white font-bold text-sm shadow transition-all flex items-center justify-center gap-2">
+              <span>Send Request</span>
+              <i data-lucide="check" class="w-4 h-4"></i>
+            </button>
+            <button type="button" onclick="sendModalWhatsApp()" class="py-3 px-5 rounded-xl bg-[#25d366] hover:bg-[#20bd5a] text-white font-bold text-sm shadow transition-all flex items-center justify-center gap-2">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Send via WhatsApp</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Toast Notification -->
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 toast-notice bg-forest-900 text-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-3 border border-forest-700 text-sm font-medium">
+    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+    <span id="toast-message">Your message has been sent successfully!</span>
+  </div>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <a href="https://wa.me/?text=Hello%20Kensultagribase%2C%20I%20would%20like%20to%20inquire%20about%20your%20agricultural%20services." target="_blank" rel="noopener noreferrer" class="whatsapp-float whatsapp-pulse" aria-label="Contact us on WhatsApp">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-forest-950 text-slate-300 pt-16 pb-12 border-t border-forest-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-forest-800/80">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl overflow-hidden bg-white p-1">
+              <img src="./logo.jpeg" alt="Kensultagribase Logo" class="w-full h-full object-contain">
+            </div>
+            <span class="text-2xl font-bold text-white font-['Outfit']">Kensultagribase</span>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+            Leading the future of agricultural productivity with sustainable farm management, modern irrigation, fresh vegetable farming, and dependable commodity distribution.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="#contact" class="w-9 h-9 rounded-full bg-forest-800 hover:bg-forest-700 text-white flex items-center justify-center transition-colors" aria-label="Contact">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+            </a>
+            <a href="https://wa.me/?text=Hello%20Kensultagribase" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-forest-800 hover:bg-[#25d366] text-white flex items-center justify-center transition-colors" aria-label="WhatsApp">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+            <a href="#contact" class="w-9 h-9 rounded-full bg-forest-800 hover:bg-forest-700 text-white flex items-center justify-center transition-colors" aria-label="Location">
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider font-['Outfit']">Company</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">All Services</a></li>
+            <li><a href="#why-us" class="hover:text-white transition-colors">Why Choose Us</a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Links -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider font-['Outfit']">Core Services</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="#services" class="hover:text-white transition-colors">Farm Management</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Irrigation Farming</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Vegetable Production</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Commodities Supply</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Mango & Cashew</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Contract Farming</a></li>
+          </ul>
+        </div>
+
+        <!-- Working Hours & Direct Contact -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider font-['Outfit']">Agro-Desk</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Reach out for agricultural advisory, commercial partnership inquiries, and off-take agreements.
+          </p>
+          <div class="space-y-2 pt-2 text-xs text-slate-300">
+            <p class="flex items-center gap-2">
+              <i data-lucide="clock" class="w-4 h-4 text-emerald-400"></i>
+              <span>Mon – Sat: 8:00 AM – 6:00 PM</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i>
+              <span>info@kensultagribase.com</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>&copy; <span id="currentYear">2026</span> Kensultagribase. All rights reserved.</p>
+        <p class="flex items-center gap-1">
+          <span>Designed & Built for Sustainable Agribusiness Growth</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="./main.js"></script>
+</body>
+</html>

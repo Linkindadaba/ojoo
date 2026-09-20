@@ -1,0 +1,9 @@
+# Node / Vercel
+node_modules/
+.vercel/
+*.log
+
+# OS & Office temps
+.DS_Store
+Thumbs.db
+~$*.docx
