@@ -1,0 +1,16 @@
+{
+  "name": "kensultagribase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kensultagribase sustainable agribusiness website",
+  "scripts": {
+    "build": "echo 'Static build ready'",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "agribusiness",
+    "kensultagribase"
+  ],
+  "author": "",
+  "license": "ISC"
+}
