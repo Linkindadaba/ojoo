@@ -136,7 +136,7 @@ function sendModalWhatsApp() {
     (phone ? `Phone: ${phone}%0A` : '') +
     (notes ? `Details: ${notes}%0A` : '');
 
-  const whatsappUrl = `https://wa.me/?text=${message}`;
+  const whatsappUrl = `https://wa.me/233549499099?text=${message}`;
   window.open(whatsappUrl, '_blank');
   closeInquiryModal();
 }
